@@ -1,0 +1,36 @@
+body {
+    background-color: #333; /* Fondo oscuro */
+    color: #fff; /* Texto claro */
+  }
+  
+  .navbar {
+    background-color: #dc3545 !important; /* Fondo rojo para el navbar */
+    color:black;
+  }
+  
+  .btn-danger {
+    background-color: #dc3545; /* Fondo rojo para los botones */
+    border-color: #dc3545; /* Borde rojo para los botones */
+  }
+  
+  .btn-danger:hover {
+    background-color: #c82333; /* Color de fondo más oscuro al pasar el ratón */
+    border-color: #bd2130; /* Color de borde más oscuro al pasar el ratón */
+  }
+  
+  .carousel-item img {
+    height: 800px; /* Tamaño de las imágenes del carousel */
+    width: 550px;
+  }
+  
+  .carousel-control-prev, .carousel-control-next {
+    color: #dc3545; /* Color de las flechas del carousel */
+  }
+  
+  .carousel-control-prev:hover, .carousel-control-next:hover {
+    color: #c82333; /* Color de las flechas más oscuro al pasar el ratón */
+  }
+  hr {
+    border-top: 2px solid #dc3545; /* Color rojo (#dc3545) para la línea */
+  }
+  
