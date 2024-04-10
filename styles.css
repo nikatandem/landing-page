@@ -1,36 +1,60 @@
 body {
-    background-color: #333; /* Fondo oscuro */
-    color: #fff; /* Texto claro */
-  }
-  
-  .navbar {
-    background-color: #dc3545 !important; /* Fondo rojo para el navbar */
-    color:black;
-  }
-  
-  .btn-danger {
-    background-color: #dc3545; /* Fondo rojo para los botones */
-    border-color: #dc3545; /* Borde rojo para los botones */
-  }
-  
-  .btn-danger:hover {
-    background-color: #c82333; /* Color de fondo más oscuro al pasar el ratón */
-    border-color: #bd2130; /* Color de borde más oscuro al pasar el ratón */
-  }
-  
-  .carousel-item img {
-    height: 800px; /* Tamaño de las imágenes del carousel */
-    width: 550px;
-  }
-  
-  .carousel-control-prev, .carousel-control-next {
-    color: #dc3545; /* Color de las flechas del carousel */
-  }
-  
-  .carousel-control-prev:hover, .carousel-control-next:hover {
-    color: #c82333; /* Color de las flechas más oscuro al pasar el ratón */
-  }
-  hr {
-    border-top: 2px solid #dc3545; /* Color rojo (#dc3545) para la línea */
-  }
-  
+  background-color: #333; /* Fondo oscuro */
+  color: #fff; /* Texto claro */
+  background-image: url('./images/cocodrilo.png');
+  background-position: left; /* La imagen se coloca a la izquierda y centrada verticalmente */
+  background-repeat: no-repeat; /* Evita que las imágenes se repitan */
+  background-size: auto 25%; /* Tamaño de la imagen: auto para mantener la relación de aspecto y 20% de altura */
+}
+
+.navbar{
+  background-color: #dc3545 !important; /* Fondo rojo para el navbar */
+}
+.nav-link, .navbar-brand {
+  color: #dc3545 !important; 
+  font-size: larger;
+}
+.btn-danger {
+  background-color: #dc3545; /* Fondo rojo para los botones */
+  border-color: #dc3545; /* Borde rojo para los botones */
+}
+.btn-danger:hover {
+  background-color: #c82333; /* Color de fondo más oscuro al pasar el ratón */
+  border-color: #bd2130; /* Color de borde más oscuro al pasar el ratón */
+}
+.carousel-item img {
+  height: 700px; /* Tamaño de las imágenes del carousel */
+  width: 300px;
+  padding: 9px;
+
+}
+.carousel-control-prev, .carousel-control-next {
+  color: #dc3545; /* Color de las flechas del carousel */
+}
+.carousel-control-prev:hover, .carousel-control-next:hover {
+  color: #c82333; /* Color de las flechas más oscuro al pasar el ratón */
+}
+
+#maparanjuez {
+  width: 100%;
+  height: 400px;
+}
+/* Estilos adicionales para las instrucciones */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+}
+h1, h2 {
+  color: #dc3545;
+}
+p {
+  font-size: 18px;
+}
+.instrucciones-list li, p {
+  color: black;
+}

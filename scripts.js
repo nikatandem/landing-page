@@ -13,3 +13,23 @@ muteButton.addEventListener('click', function() {
     muteIcon.classList.add('bi-volume-mute-fill');
   }
 });
+// Función para manejar la descarga del mapa
+function descargarMapa() {
+  // Realiza cualquier operación adicional necesaria antes de la descarga
+
+  // Simula una descarga
+  alert("¡Mapa descargado!");
+
+  // Puedes agregar aquí la lógica para preparar el mapa o manipular datos si es necesario
+
+  // Finalmente, inicia la descarga del mapa
+  var link = document.createElement("a");
+  link.download = "./images/mapa.jpg";
+  link.href = "./images/mapa.jpg";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+
+// Asigna la función descargarMapa al evento click del botón de descarga
+document.getElementById("descargarMapa").addEventListener("click", descargarMapa);
