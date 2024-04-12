@@ -14,6 +14,15 @@ body {
   color: #dc3545 !important; 
   font-size: larger;
 }
+.navbar-toggler.collapsed{
+  border-color:#dc3545;
+  background-color: rgb(250, 215, 215);
+}
+.navbar-toggler{
+  border-color:#dc3545;
+  background-color: rgb(250, 215, 215);
+}
+
 .btn-danger {
   background-color: #dc3545; /* Fondo rojo para los botones */
   border-color: #dc3545; /* Borde rojo para los botones */
