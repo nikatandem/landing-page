@@ -18,6 +18,17 @@
         <img src="images/Logo (1).png" alt="Logo" width="50" height="50" class="d-inline-block align-top">
         AranjueGo
       </a>
+       <!-- Reproductor de audio -->
+  <div onload="playMusic()">
+    <audio id="audioPlayer" autoplay loop>
+      <source src="audio/cancion.mp3" type="audio/mpeg">
+      </audio>
+      
+      <div id="audioControls">
+      <button class="bg-danger" id="muteButton"><i id="muteIcon" class="bi bi-volume-mute-fill"></i></button>
+      </div>
+      </div>
+      <!-- Menú de navegación -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -36,46 +47,55 @@
       </div>
     </div>
   </nav>
-  <div class="container">
-    <h1 class="text-center">Instrucciones del Juego "AranjueGo"</h1>
-    <p class="lead text-center">¡Explora Aranjuez y descubre sus secretos!</p>
-    <hr>
-    <div class="row">
-      <div class="col-md-6">
-        <h2>Objetivo del juego:</h2>
-        <p class="instrucciones-list">El objetivo de AranjueGo es explorar la hermosa ciudad de Aranjuez mientras completas una ruta marcada en el mapa y respondes preguntas sobre los puntos de interés.</p>
+
+  <section id="section-cards">
+  <!-- Cards -->
+  <div class="card-group">
+  <div class="card mb-3" >
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="./images/cocodrilo.png" class="img-fluid rounded-start" alt="cocodrilo">
       </div>
-      <div class="col-md-6">
-        <h2>Cómo jugar:</h2>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h3 class="card-title">Intrucciones del Juego "AranjueGo"</h3>
+          <p class="card-text">¡Explora Aranjuez y descubre sus secretos!</p>
+          <h4>Objetivo del juego:</h4>
+          <p class="instrucciones-list">El objetivo de AranjueGo es explorar la hermosa ciudad de Aranjuez mientras completas una ruta marcada en el mapa y respondes preguntas sobre los puntos de interés.</p>
+          <h4>Cómo jugar:</h4>
         <ul class="instrucciones-list">
-          <li>Haz clic en el botón "JUGAR" para comenzar la aventura.</li>
+          <li>Haz clic en el botón "JUGAR AHORA" para comenzar la aventura.</li>
           <li>Sigue la ruta marcada en el mapa y visita cada punto de parada.</li>
           <li>En cada punto de parada, contesta las preguntas relacionadas con los lugares emblemáticos de Aranjuez.</li>
           <li>Disfruta explorando y aprendiendo sobre la historia y los lugares emblemáticos de Aranjuez.</li>
         </ul>
+     
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-center">
+            <button id="playButton" class="btn btn-lg btn-danger mt-3">¡JUGAR AHORA!</button>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h3 class="card-title">Mapa del juego</h3>
+              <img src="./images/mapa.jpg" alt="mapa de aranjuez" id="maparanjuez">
+            <div class="row justify-content-center">
+              <div class="col-md-6 text-center">
+                <button id="playButton" class="btn btn-lg btn-danger mt-3">Descargar Mapa</button>
+              </div>
+        </div>
+      </div>
+        </div>
       </div>
     </div>
-    <div class="text-center">
-      <button id="playButton" class="btn btn-lg btn-danger mt-3">¡JUGAR AHORA!</button>
     </div>
-  </div>
-
-<!-- Mapa interactivo -->
-<section id="mapa" class="container mt-5">
-  <h2>Mapa del juego</h2>
-  <!-- Aquí puedes incluir el mapa interactivo -->
-  <!-- Por ejemplo, puedes utilizar el siguiente código para integrar Google Maps -->
-  <!-- Reemplaza 'API_KEY' con tu clave de API de Google Maps -->
-  <img src="./images/mapa.jpg" alt="mapa de aranjuez" id="maparanjuez">
-<!-- Botón de descarga del mapa -->
-<div id="descargarMapa" class="container text-center mt-3">
-  <a href="./images/mapa.jpg" download="./images/mapa.jpg" class="btn btn-danger">Descargar mapa</a>
-</div>
-</section>
-
+    </div>
+    </div>
+  </section>
 
 
   <!-- Carousel -->
+  <section id="section-carousel">
+  <div class="container">
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -100,29 +120,16 @@
     <span class="sr-only">Siguiente</span>
   </a>
 </div>
-
- 
-
-  <!-- Reproductor de audio -->
-  <div onload="playMusic()">
-<audio id="audioPlayer" autoplay loop>
-	<source src="audio/cancion.mp3" type="audio/mpeg">
-  </audio>
-  
-  <div id="audioControls">
-	<button class="bg-danger" id="muteButton"><i id="muteIcon" class="bi bi-volume-mute-fill"></i></button>
-  </div>
-  </div>
-  
-  
-
-  
+</div>
+</div>
+</section>
+  <section id="section-footer">
   <footer class="bg-dark text-white text-center py-3">
-	<div class="container">
+	<div class="container" id="footer">
 	  <p>&copy; Nikatandem 2024. Todos los derechos reservados.</p>
 	</div>
   </footer>
-  
+</section>
 
   <!-- Bootstrap JS y jQuery (necesarios para el funcionamiento de Bootstrap) -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

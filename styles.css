@@ -1,12 +1,16 @@
 body {
   background-color: #333; /* Fondo oscuro */
-  color: #fff; /* Texto claro */
-  background-image: url('./images/cocodrilo.png');
-  background-position: left; /* La imagen se coloca a la izquierda y centrada verticalmente */
-  background-repeat: no-repeat; /* Evita que las imágenes se repitan */
-  background-size: auto 25%; /* Tamaño de la imagen: auto para mantener la relación de aspecto y 20% de altura */
+  font-family: monospace;
+  display: inline-block;
 }
 
+h2,h3,h4{
+  color:#dc3545;
+}
+.img-fluid{
+  position:absolute;
+  margin-top: 20px;
+}
 .navbar{
   background-color: #dc3545 !important; /* Fondo rojo para el navbar */
 }
@@ -33,8 +37,8 @@ body {
 }
 .carousel-item img {
   height: 700px; /* Tamaño de las imágenes del carousel */
-  width: 300px;
-  padding: 9px;
+  width: 1000px;
+
 
 }
 .carousel-control-prev, .carousel-control-next {
@@ -45,8 +49,8 @@ body {
 }
 
 #maparanjuez {
-  width: 100%;
-  height: 400px;
+  /* width: 100%;
+  height: 600px; */
 }
 /* Estilos adicionales para las instrucciones */
 .container {
@@ -55,8 +59,7 @@ body {
   padding: 20px;
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-top: 50px;
+
 }
 h1, h2 {
   color: #dc3545;
@@ -66,4 +69,57 @@ p {
 }
 .instrucciones-list li, p {
   color: black;
+}
+.navbar-brand{
+font-size: 30px;
+font-family: fantasy;
+}
+h2{
+ text-decoration: underline;
+}
+.nav-link{
+  font-family:'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+#footer p{
+  font-family:'Times New Roman', Times, serif;
+  font-size: 20px;
+  color: #dc3546;
+}
+/* Estilos adicionales para el botón "¡JUGAR AHORA!" */
+#playButton {
+  color: white; /* Cambia el color del texto del botón */
+  border-radius: 10px; /* Agrega esquinas redondeadas al botón */
+}
+
+/* Estilos adicionales para el mapa del juego */
+#maparanjuez {
+  max-width: 100%; /* Hace que el mapa se ajuste al ancho del contenedor */
+  height: auto; /* Mantiene la proporción de aspecto del mapa */
+  border: 2px solid #dc3545; /* Agrega un borde al mapa */
+}
+
+/* Estilos adicionales para el botón de descarga del mapa */
+#descargarMapa .btn {
+  color: white; /* Cambia el color del texto del botón de descarga */
+  border-radius: 5px; /* Agrega esquinas redondeadas al botón de descarga */
+  margin-top: 10px; /* Añade un margen superior al botón de descarga */
+}
+@media (max-width: 576px) {
+  .img-fluid {
+    display: none;
+  }
+  .carousel-item img {
+    height: auto; /* Hace que la altura se ajuste automáticamente */
+    width: 100%; /* Hace que la imagen ocupe todo el ancho del carousel */
+  }
+  body{
+    margin-left: 2px; /* Margen izquierdo automático */
+    margin-right: 2px; /* Margen derecho automático */
+  }
+  #section-footer{
+    padding: 0%;
+    font-size: smaller;
+    padding: 0em;
+  }
 }
