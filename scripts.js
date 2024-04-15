@@ -15,9 +15,15 @@ var audio = document.getElementById('audioPlayer');
     });
 
     function playMusic() {
-      audio.play();
+      // Espera 3 segundos antes de iniciar la reproducción
+      setTimeout(function() {
+        // Selecciona el elemento de audio
+        var audioPlayer = document.getElementById("audioPlayer");
+      
+        // Inicia la reproducción
+        audioPlayer.play();
+      }, 3000); // 3000 milisegundos = 3 segundos
     }
-
 // Función para manejar la descarga del mapa
 function descargarMapa() {
   // Realiza cualquier operación adicional necesaria antes de la descarga
