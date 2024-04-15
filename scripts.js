@@ -1,29 +1,29 @@
-var audio = document.getElementById('audioPlayer');
-    var muteButton = document.getElementById('muteButton');
-    var muteIcon = document.getElementById('muteIcon');
+let audio = document.getElementById('audioPlayer');
+let muteButton = document.getElementById('muteButton');
+let muteIcon = document.getElementById('muteIcon');
 
-    muteButton.addEventListener('click', function() {
-      if (audio.muted) {
-        audio.muted = false;
-        muteIcon.classList.remove('bi-volume-mute-fill');
-        muteIcon.classList.add('bi-volume-up-fill');
-      } else {
-        audio.muted = true;
-        muteIcon.classList.remove('bi-volume-up-fill');
-        muteIcon.classList.add('bi-volume-mute-fill');
-      }
-    });
+// Evento de clic en el botón de mute
+muteButton.addEventListener('click', function() {
+  if (audio.muted) {
+    audio.muted = false;
+    muteIcon.classList.remove('fa-volume-mute');
+    muteIcon.classList.add('fa-volume-up');
+  } else {
+    audio.muted = true;
+    muteIcon.classList.remove('fa-volume-up');
+    muteIcon.classList.add('fa-volume-mute');
+  }
+});
 
-    function playMusic() {
-      // Espera 3 segundos antes de iniciar la reproducción
-      setTimeout(function() {
-        // Selecciona el elemento de audio
-        var audioPlayer = document.getElementById("audioPlayer");
-      
-        // Inicia la reproducción
-        audioPlayer.play();
-      }, 3000); // 3000 milisegundos = 3 segundos
-    }
+// Función para iniciar la reproducción después de 3 segundos
+function playMusic() {
+  setTimeout(function() {
+    audio.play();
+  }, 3000);
+}
+
+// Llama a la función para iniciar la reproducción
+playMusic();
 // Función para manejar la descarga del mapa
 function descargarMapa() {
   // Realiza cualquier operación adicional necesaria antes de la descarga
@@ -34,7 +34,7 @@ function descargarMapa() {
   // Puedes agregar aquí la lógica para preparar el mapa o manipular datos si es necesario
 
   // Finalmente, inicia la descarga del mapa
-  var link = document.createElement("a");
+  let link = document.createElement("a");
   link.download = "./images/mapa.jpg";
   link.href = "./images/mapa.jpg";
   document.body.appendChild(link);

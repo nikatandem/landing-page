@@ -38,8 +38,9 @@ h2,h3,h4{
 .carousel-item img {
   height: 700px; /* Tamaño de las imágenes del carousel */
   width: 1000px;
-
-
+}
+.mute-btn {
+  cursor: pointer;
 }
 .carousel-control-prev, .carousel-control-next {
   color: #dc3545; /* Color de las flechas del carousel */
