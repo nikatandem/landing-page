@@ -30,6 +30,7 @@ h2,h3,h4{
 .btn-danger {
   background-color: #dc3545; /* Fondo rojo para los botones */
   border-color: #dc3545; /* Borde rojo para los botones */
+ 
 }
 .btn-danger:hover {
   background-color: #c82333; /* Color de fondo más oscuro al pasar el ratón */
@@ -123,4 +124,21 @@ h2{
     font-size: smaller;
     padding: 0em;
   }
+}
+
+
+@keyframes infiniteZoomIn {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.infinite-animation {
+  animation: infiniteZoomIn 2s infinite; /* ajusta el tiempo de animación según tus necesidades */
 }

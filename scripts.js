@@ -44,3 +44,6 @@ function descargarMapa() {
 
 // Asigna la función descargarMapa al evento click del botón de descarga
 document.getElementById("descargarMapa").addEventListener("click", descargarMapa);
+
+document.getElementById("playButton").classList.add("infinite-animation");
+document.getElementById("descargarMapa").classList.add("infinite-animation");
