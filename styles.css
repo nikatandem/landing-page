@@ -10,6 +10,8 @@ h2,h3,h4{
 .img-fluid{
   position:absolute;
   margin-top: 20px;
+
+
 }
 .navbar{
   background-color: #dc3545 !important; /* Fondo rojo para el navbar */
@@ -30,7 +32,8 @@ h2,h3,h4{
 .btn-danger {
   background-color: #dc3545; /* Fondo rojo para los botones */
   border-color: #dc3545; /* Borde rojo para los botones */
- 
+  box-shadow: #f4cfb6 3px 4px 2px 3px;
+
 }
 .btn-danger:hover {
   background-color: #c82333; /* Color de fondo más oscuro al pasar el ratón */
@@ -107,6 +110,14 @@ h2{
   border-radius: 5px; /* Agrega esquinas redondeadas al botón de descarga */
   margin-top: 10px; /* Añade un margen superior al botón de descarga */
 }
+.animate__flipInY{
+  animation-duration: 5s;
+}
+.animate__zoomIn {
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
 @media (max-width: 576px) {
   .img-fluid {
     display: none;
@@ -139,6 +150,3 @@ h2{
   }
 }
 
-.infinite-animation {
-  animation: infiniteZoomIn 2s infinite; /* ajusta el tiempo de animación según tus necesidades */
-}
