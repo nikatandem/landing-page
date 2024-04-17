@@ -1,29 +1,20 @@
-let audio = document.getElementById('audioPlayer');
-let muteButton = document.getElementById('muteButton');
-let muteIcon = document.getElementById('muteIcon');
-
-// Evento de clic en el botón de mute
-muteButton.addEventListener('click', function() {
-  if (audio.muted) {
-    audio.muted = false;
-    muteIcon.classList.remove('fa-volume-mute');
-    muteIcon.classList.add('fa-volume-up');
-  } else {
-    audio.muted = true;
-    muteIcon.classList.remove('fa-volume-up');
-    muteIcon.classList.add('fa-volume-mute');
-  }
-});
-
-// Función para iniciar la reproducción después de 3 segundos
-function playMusic() {
-  setTimeout(function() {
-    audio.play();
-  }, 3000);
-}
-
 // Llama a la función para iniciar la reproducción
-playMusic();
+
+const audioPlayer = document.getElementById("audioPlayer");
+const toggleButton = document.getElementById("toggleButton");
+const playIcon = document.getElementById("playIcon");
+
+toggleButton.addEventListener("click", () => {
+    if (audioPlayer.paused) {
+        audioPlayer.play();
+        playIcon.classList.remove("bi-volume-mute");
+        playIcon.classList.add("bi-volume-up");
+    } else {
+        audioPlayer.pause();
+        playIcon.classList.remove("bi-volume-up");
+        playIcon.classList.add("bi-volume-mute");
+    }
+});
 // Función para manejar la descarga del mapa
 function descargarMapa() {
   // Realiza cualquier operación adicional necesaria antes de la descarga
