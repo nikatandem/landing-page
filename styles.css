@@ -120,7 +120,7 @@ h2{
 
 @media (max-width: 576px) {
   .img-fluid {
-    display: none;
+    opacity: 0.3; /* 50% de opacidad */;
   }
   .carousel-item img {
     height: auto; /* Hace que la altura se ajuste automáticamente */
@@ -135,6 +135,7 @@ h2{
     font-size: smaller;
     padding: 0em;
   }
+
 }
 
 

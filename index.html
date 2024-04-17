@@ -63,31 +63,36 @@
           <p class="card-text">¡Explora Aranjuez y descubre sus secretos!</p>
           <h4>Objetivo del juego:</h4>
           <p class="instrucciones-list">El objetivo de AranjueGo es explorar la hermosa ciudad de Aranjuez mientras completas una ruta marcada en el mapa y respondes preguntas sobre los puntos de interés.</p>
-          <h4>Cómo jugar:</h4>
+          <div class="col-md-6 text-center">
+            <button id="playButton" class="btn btn-lg btn-danger mt-3 animate__zoomIn animate__animated">¡JUGAR AHORA!</button>
+            <hr>
+            <!-- Large modal -->
+<button type="button" class="btn btn-danger" data-toggle="modal" data-target=".bd-example-modal-lg">Instrucciones</button>
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+     <h4>Cómo jugar:</h4>
+          <div class="instrucciones">
         <ul class="instrucciones-list">
           <li>Haz clic en el botón "JUGAR AHORA" para comenzar la aventura.</li>
           <li>Sigue la ruta marcada en el mapa y visita cada punto de parada.</li>
           <li>En cada punto de parada, contesta las preguntas relacionadas con los lugares emblemáticos de Aranjuez.</li>
           <li>Disfruta explorando y aprendiendo sobre la historia y los lugares emblemáticos de Aranjuez.</li>
         </ul>
-     
-        <div class="row justify-content-center">
-          <div class="col-md-6 text-center">
-            <button id="playButton" class="btn btn-lg btn-danger mt-3 animate__zoomIn animate__animated">¡JUGAR AHORA!</button>
+    </div>
+  </div>
+</div>
+</div>
+<hr>    
+        <div class="col-md-6 text-center">
 
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h3 class="card-title">Mapa del juego</h3>
-              <img src="./images/mapa.jpg" alt="mapa de aranjuez" id="maparanjuez">
-            <div class="row justify-content-center">
-              <div class="col-md-6 text-center">
-                <button id="descargarMapa" class="btn btn-lg btn-danger mt-3">Descargar Mapa</button>
-              </div>
+        </div><h3 class="card-title">Mapa del juego</h3>
+        <img src="./images/mapa.jpg" alt="mapa de aranjuez" id="maparanjuez"> 
+          <button id="descargarMapa" class="btn btn-danger mt-3">Descargar Mapa</button>
+      </div> 
         </div>
-      </div>
-        </div>
-      </div>
+      
     </div>
     </div>
     </div>
